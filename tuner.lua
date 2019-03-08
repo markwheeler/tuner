@@ -2,14 +2,14 @@
 --
 -- Responds to audio input.
 --
--- ENC3 : Reference note
+-- E3 : Reference note
 --
--- v1.0.1 Mark Eats
+-- v1.0.2 Mark Eats
 --
 
 local ControlSpec = require "controlspec"
-local MusicUtil = require "mark_eats/musicutil"
-local Formatters = require "jah/formatters"
+local MusicUtil = require "musicutil"
+local Formatters = require "formatters"
 
 engine.name = "TestSine"
 
@@ -83,8 +83,8 @@ function init()
   end)
   pitch_poll_r:start()
   
-  local screen_refresh_metro = metro.alloc()
-  screen_refresh_metro.callback = function()
+  local screen_refresh_metro = metro.init()
+  screen_refresh_metro.event = function()
     if screen_dirty then
       screen_dirty = false
       redraw()
