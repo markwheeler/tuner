@@ -1,10 +1,10 @@
 -- Tuner
+-- 1.0.2 @markeats
+-- llllllll.co/t/21088
 --
 -- Responds to audio input.
 --
 -- E3 : Reference note
---
--- v1.0.2 Mark Eats
 --
 
 local ControlSpec = require "controlspec"
