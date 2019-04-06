@@ -1,6 +1,6 @@
 -- Tuner
 -- 1.0.2 @markeats
--- llllllll.co/t/21088
+-- llllllll.co/t/tuner
 --
 -- Responds to audio input.
 --
