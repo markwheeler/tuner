@@ -24,7 +24,7 @@ local last_freq = -1
 function enc(n, delta)
   
   if n == 2 then
-          
+    params:delta("note", delta)        
   elseif n == 3 then
     params:delta("note_vol", delta)
   end
